@@ -20,3 +20,10 @@ inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
+
+" Plugins
+call plug#begin()
+Plug 'romgrk/barbar.nvim' "tab-navbar plugin
+Plug 'kyazdani42/nvim-web-devicons' "tab-navbar plugin dependece
+Plug 'vim-airline/vim-airline' "dock-bar
+call plug#end()
