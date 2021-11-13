@@ -21,6 +21,14 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
+" Tabs (not spaces!!!)
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4    " number of spaces to use for autoindent
+set expandtab       " tabs are space
+set copyindent      " copy indent from the previous line
+set autoindent
+
 " Plugins
 call plug#begin()
 Plug 'romgrk/barbar.nvim' "tab-navbar plugin
