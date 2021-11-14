@@ -3,20 +3,17 @@
 A Kyb3r Vizsla neovim/vim basic config
 
 ## Installation:
-```bash
-mkdir ~/.config/nvim
-wget -O ~/.config/nvim/init.vim
-```
+Manual: Install [nvim](https://neovim.io)/vim and clone this repository in your vim configuration folder, then install [vim-plug](https://github.com/junegunn/vim-plug/blob/master/README.md#Installation).
 
-If you use Linux install vim-plug with:
+In Linux:
+(First install nvim/vim)
 ```bash
+mv ~/.config/nvim ~/.config/old-nvim
+git clone https://github.com/kyb3rvizsla/NabooVim.git ~/.config/nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-Or click [here](https://github.com/junegunn/vim-plug/blob/master/README.md#Installation) to see how to do it in other systems.
 
-Once you open neovim for the first time, execute: ```:PlugInstall``` to install the plugins.
+When you have nvim/vim, the config and vim-plug installed open vim and run: ```:PlugInstall``` to install the plugins.
 
-For manual installation put ```init.vim``` in your nvim config path later install the plugins.
-
-Important ⚠️: You need **[neovim](https://neovim.io)**/**vim**,**wget** and [vim-plug](https://github.com/junegunn/vim-plug) intalled
+And everything will be ready :smile:.
