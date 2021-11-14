@@ -6,6 +6,7 @@
 " Basic config
 set encoding=UTF-8
 set clipboard=unnamedplus "copy vim clipboard to system
+set wrap! "toggle word wrap
 set number relativenumber "lines number
 
 " Shortcuts
@@ -31,7 +32,7 @@ set autoindent
 
 " Plugins
 call plug#begin()
-Plug 'romgrk/barbar.nvim' "tab-navbar plugin
-Plug 'kyazdani42/nvim-web-devicons' "tab-navbar plugin dependece
+Plug 'romgrk/barbar.nvim' "tab-navbar
 Plug 'vim-airline/vim-airline' "dock-bar
+Plug 'kyazdani42/nvim-web-devicons' "icons
 call plug#end()
