@@ -33,6 +33,8 @@ set autoindent
 " Plugins
 call plug#begin()
 Plug 'romgrk/barbar.nvim' "tab-navbar
-Plug 'vim-airline/vim-airline' "dock-bar
+Plug 'nvim-lualine/lualine.nvim' "dock-bar
 Plug 'kyazdani42/nvim-web-devicons' "icons
 call plug#end()
+"plugins config sources
+source $HOME/.config/nvim/env/lualine.lua "dock-bar
