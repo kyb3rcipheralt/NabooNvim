@@ -32,6 +32,7 @@ set autoindent
 
 " Plugins
 call plug#begin()
+Plug 'iamcco/markdown-preview.nvim' "markdown preview
 Plug 'romgrk/barbar.nvim' "tab-navbar
 Plug 'nvim-lualine/lualine.nvim' "dock-bar
 Plug 'kyazdani42/nvim-web-devicons' "icons
