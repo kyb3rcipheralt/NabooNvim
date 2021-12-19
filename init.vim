@@ -38,4 +38,5 @@ Plug 'nvim-lualine/lualine.nvim' "dock-bar
 Plug 'kyazdani42/nvim-web-devicons' "icons
 call plug#end()
 "plugins config
+call mkdp#util#install() "markdown preview
 source $HOME/.config/nvim/env/lualine.lua "dock-bar
