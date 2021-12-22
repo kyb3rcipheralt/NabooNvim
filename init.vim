@@ -15,7 +15,7 @@ set number relativenumber "lines number
 
 " Keyboard keys config
 "switch tabs
-nnoremap <C-e> :set nomore <Bar> :ls <Bar> :set more <CR>:b<Space>
+nnoremap <C-e> :set nomore <Bar> :ls <Bar> :set more <CR>:b!<Space>
 "moving keys in editor mode with ctrl
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
