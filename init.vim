@@ -1,5 +1,5 @@
 "---------------------------- 
-" Kyb3r neovim/vim config 
+" Kyb3r neovim config 
 " LICENSE: MIT
 "----------------------------
 
@@ -14,9 +14,7 @@ set number relativenumber "lines number
 :imap jj <Esc>
 
 " Keyboard keys config
-"switch tabs
-nnoremap <C-e> :set nomore <Bar> :ls <Bar> :set more <CR>:b!<Space>
-"moving keys in editor mode with ctrl
+"switch tabs nnoremap <C-e> :set nomore <Bar> :ls <Bar> :set more <CR>:b!<Space> moving keys in editor mode with ctrl
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
@@ -32,11 +30,19 @@ set autoindent
 
 " Plugins
 call plug#begin()
+" Utilities
+Plug 'airblade/vim-gitgutter' "git changes marker
+Plug 'tpope/vim-fugitive' "git wrapper
 Plug 'iamcco/markdown-preview.nvim' "markdown preview
+
+" Style
+Plug 'folke/tokyonight.nvim' "theme
 Plug 'romgrk/barbar.nvim' "tab-navbar
 Plug 'nvim-lualine/lualine.nvim' "dock-bar
 Plug 'kyazdani42/nvim-web-devicons' "icons
 call plug#end()
 "plugins config
 call mkdp#util#install() "markdown preview
+set updatetime=001 "git checker update time
+source $HOME/.config/nvim/env/tokyonight.vim "theme
 source $HOME/.config/nvim/env/lualine.lua "dock-bar
