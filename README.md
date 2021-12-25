@@ -1,9 +1,8 @@
 # Kyb3r nvim config
-
 A Kyb3r neovim basic config
 
 ## Installation:
-Manual: Install [nvim](https://neovim.io) and clone this repository in your vim configuration folder, then install [vim-plug](https://github.com/junegunn/vim-plug/blob/master/README.md#Installation).
+Manual: install [nvim](https://neovim.io) and clone this repository in your vim configuration folder, then install [vim-plug](https://github.com/junegunn/vim-plug/blob/master/README.md#Installation).
 
 In Linux:
 (First install nvim/vim)
@@ -17,3 +16,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 When you have nvim, the config and vim-plug installed open nvim and run: ```:PlugInstall``` to install the plugins.
 
 And everything will be ready :smile:.
+
+### Screenshots
+![nvim](screenshots/neovim.png)
+![nvim-insert](screenshots/neovim-insert.png)
