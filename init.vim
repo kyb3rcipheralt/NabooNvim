@@ -34,6 +34,7 @@ call plug#begin()
 " Utilities
 Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
+Plug 'rhysd/git-messenger.vim' "git log messenge
 Plug 'iamcco/markdown-preview.nvim' "markdown preview
 
 " Style
@@ -44,6 +45,7 @@ Plug 'kyazdani42/nvim-web-devicons' "icons
 Plug 'vimsence/vimsence' "discord presence
 call plug#end()
 "plugins config
+nmap <C-w> <Plug>(git-messenger) 
 call mkdp#util#install() "markdown preview
 set updatetime=001 "git checker update time
 source $HOME/.config/nvim/env/tokyonight.vim "theme
