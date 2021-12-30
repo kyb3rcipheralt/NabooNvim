@@ -43,6 +43,6 @@ Plug 'vimsence/vimsence' "discord presence
 call plug#end()
 "plugins config
 set updatetime=000 "git changes marks init/update time
-source $HOME/.config/nvim/env/tokyonight.vim "theme
-source $HOME/.config/nvim/env/discord-presence.vim "discord presence
-source $HOME/.config/nvim/env/lualine.lua "dock-bar
+source $HOME/.config/nvim/config/tokyonight.vim "theme
+source $HOME/.config/nvim/config/discord-presence.vim "discord presence
+source $HOME/.config/nvim/config/lualine.lua "dock-bar

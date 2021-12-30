@@ -18,5 +18,5 @@ When you have nvim, the config and vim-plug installed open nvim and run: ```:Plu
 And everything will be ready :smile:.
 
 ### Screenshots
-![nvim](screenshots/neovim.png)
-![nvim-insert](screenshots/neovim-insert.png)
+![nvim](images/neovim.png)
+![nvim-insert](images/neovim-insert.png)
