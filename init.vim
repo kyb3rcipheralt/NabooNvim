@@ -1,8 +1,3 @@
-"---------------------------- 
-" Kyb3r neovim config 
-" LICENSE: MIT
-"----------------------------
-
 " Basic config
 set encoding=UTF-8
 set clipboard=unnamedplus "copy vim clipboard to system
@@ -35,7 +30,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
 Plug 'rhysd/git-messenger.vim' "git log messenge
-Plug 'iamcco/markdown-preview.nvim' "markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} "markdown preview
 
 " Style
 Plug 'folke/tokyonight.nvim' "theme
@@ -46,7 +41,6 @@ Plug 'vimsence/vimsence' "discord presence
 call plug#end()
 "plugins config
 nmap <C-w> <Plug>(git-messenger) 
-call mkdp#util#install() "markdown preview
 set updatetime=001 "git checker update time
 source $HOME/.config/nvim/env/tokyonight.vim "theme
 source $HOME/.config/nvim/env/discord-presence.vim "discord presence
