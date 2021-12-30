@@ -7,6 +7,8 @@ set number relativenumber "lines number
 " Shortcuts
 "escape shortcut
 :imap jj <Esc>
+"plugin: 'git-messenger.vim' shortcut
+nmap <C-w> <Plug>(git-messenger) 
 
 " Keyboard keys config
 "switch tabs 
@@ -29,7 +31,7 @@ call plug#begin()
 " Utilities
 Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
-Plug 'rhysd/git-messenger.vim' "git log messenge
+Plug 'rhysd/git-messenger.vim' "git changes marks
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} "markdown preview
 
 " Style
@@ -40,8 +42,7 @@ Plug 'kyazdani42/nvim-web-devicons' "icons
 Plug 'vimsence/vimsence' "discord presence
 call plug#end()
 "plugins config
-nmap <C-w> <Plug>(git-messenger) 
-set updatetime=001 "git checker update time
+set updatetime=000 "git changes marks init/update time
 source $HOME/.config/nvim/env/tokyonight.vim "theme
 source $HOME/.config/nvim/env/discord-presence.vim "discord presence
 source $HOME/.config/nvim/env/lualine.lua "dock-bar
