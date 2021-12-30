@@ -33,6 +33,8 @@ Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
 Plug 'rhysd/git-messenger.vim' "git changes marks
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} "markdown preview
+Plug 'preservim/nerdtree' "files-tree panel
+Plug 'ryanoasis/vim-devicons' "vim icons (icons for files-tree)
 
 " Style
 Plug 'folke/tokyonight.nvim' "theme
