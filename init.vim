@@ -47,4 +47,9 @@ call plug#end()
 set updatetime=000 "git changes marks init/update time
 source $HOME/.config/nvim/config/tokyonight.vim "theme
 source $HOME/.config/nvim/config/discord-presence.vim "discord presence
-source $HOME/.config/nvim/config/lualine.lua "dock-bar
+"lua config
+lua << EOF
+--> dock-bar (lualine)
+require('lualine').get_config()
+require('lualine').setup()
+EOF
