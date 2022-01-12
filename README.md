@@ -1,3 +1,6 @@
+# NOTICE: DEVELOPMENT HAS MOVED TO [dotfiles](https://github.com/kyb3rcipher/dotfiles/tree/main/nvim/.config/nvim)
+For a better working structure my neovim configuration has been moved.
+
 # Kyb3r nvim config
 
 ## Installation:
